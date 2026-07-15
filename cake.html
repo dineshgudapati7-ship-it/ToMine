@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake | Teja 💛</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Dancing+Script:wght@500;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="night">
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar glass">
+    <a href="index.html" class="logo">Tejaswi 💛</a>
+    <div class="nav-links">
+      <a href="memories.html">Memories</a>
+      <a href="reasons.html">Reasons</a>
+      <a href="letter.html">Letter</a>
+      <a href="cake.html">Cake</a>
+      <a href="final.html">Final</a>
+    </div>
+  </nav>
+
+  <button class="music-btn" id="musicBtn">♪</button>
+
+  <main class="cake-page">
+    <section>
+      <p class="script-text reveal">You mean the world to me</p>
+      <h1 class="reveal">Happy Birthday Teja 💛</h1>
+
+      <div class="cake-section">
+        <div class="cake-glow"></div>
+
+        <div class="cake-stage-text" id="cakeStageText">🥳</div>
+
+        <div class="cake" id="birthdayCake" aria-label="birthday cake cutting animation">
+          <div class="knife" aria-hidden="true">
+            <span class="knife-blade"></span>
+            <span class="knife-handle"></span>
+          </div>
+
+          <div class="candles" aria-hidden="true">
+            <span class="candle"><i class="flame"></i><i class="smoke"></i></span>
+            <span class="candle"><i class="flame"></i><i class="smoke"></i></span>
+            <span class="candle"><i class="flame"></i><i class="smoke"></i></span>
+          </div>
+
+          <div class="cut-line"></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-slice"></div>
+          <div class="plate"></div>
+        </div>
+
+        <button class="cut-cake-btn" type="button">Start Cake Cutting 🎂</button>
+      </div>
+    </section>
+  </main>
+
+  <canvas id="confetti"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

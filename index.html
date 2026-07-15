@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Teja 💛</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="--hero-image: url('assets/ak1.jpg');">
+  <div class="cursor-glow"></div>
+  <div class="floating-bg"></div>
+
+  <nav class="navbar glass">
+    <a href="index.html" class="logo">Tejaswi 💛</a>
+    <div class="nav-links">
+      <a href="memories.html">Memories</a>
+      <a href="reasons.html">Reasons</a>
+      <a href="letter.html">Letter</a>
+      <a href="cake.html">Cake</a>
+      <a href="final.html">Final</a>
+    </div>
+  </nav>
+
+  <button class="music-btn" id="musicBtn">♪</button>
+
+  <!-- Site blocker prevents interaction until countdown reaches zero -->
+  <div id="siteBlocker" class="site-blocker" aria-hidden="true">
+    <!-- overlay used to block interactions while locked; message shown inline below -->
+    <div class="pre-wish-message" id="preWishMessage" aria-hidden="true"></div>
+  </div>
+
+  <main class="hero page-section">
+    <div class="hero-overlay"></div>
+    <section class="hero-content reveal">
+      <p class="script-text">This is a little universe made just for you</p>
+      <h1>Happy Birthday<br><span>My Love</span></h1>
+      <p class="hero-desc">To my favorite person, on her favorite day.</p>
+      <div class="hero-actions">
+        <div id="preWishInline" class="pre-wish-inline">Patience, Mam 😙 — the surprise opens on July 19, 2026. Hold tight until then!</div>
+
+        <div id="interactiveActions" class="interactive-actions hidden">
+          <a class="btn primary" href="cake.html">Cut the Cake</a>
+          <a class="btn ghost" href="letter.html">Read Letter</a>
+        </div>
+      </div>
+    </section>
+
+    <aside class="countdown-card glass reveal delay-1">
+      <p class="script-text">birthday countdown</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="mins">00</strong><span>Mins</span></div>
+        <div><strong id="secs">00</strong><span>Secs</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
