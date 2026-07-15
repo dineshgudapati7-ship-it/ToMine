@@ -272,7 +272,7 @@ bgAudio.addEventListener('pause', () => { updateMusicButtonUI(false); saveAudioS
 const siteBlocker = $('#siteBlocker');
 const interactiveActions = $('#interactiveActions');
 const preWishInline = $('#preWishInline');
-let siteLocked = Date.now() < new Date('2026-07-13T00:00:00').getTime();
+let siteLocked = Date.now() < new Date('2026-07-19T00:00:00').getTime();
 
 // Allow a query param for testing: ?debug=unlock will force-unlock the site
 try {
@@ -404,7 +404,7 @@ function enableInteractiveElements() {
 }
 
 // Teja's birthday: July 19, 2026 (set to start of day local time)
-const birthdayDate = new Date('2026-07-13T00:00:00').getTime();
+const birthdayDate = new Date('2026-07-19T00:00:00').getTime();
 function updateCountdown() {
   const countdown = $('#countdown');
   if (!countdown) return;
